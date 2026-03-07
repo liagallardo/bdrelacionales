@@ -1,0 +1,96 @@
+Film
+film_id (pk)
+language_id (fk)
+original_language_id (fk)
+
+Language
+language_id (pk)
+
+film_category
+film_id (fk)
+category_id (fk)
+
+Customer
+customer_id (pk)
+store_id (fk)
+address_id (fk)
+
+film_actor
+actor_id (fk)
+film_id (fk)
+
+Category
+category_id (pk)
+
+Payment
+payment_id (pk)
+customer_id (fk)
+staff_id (fk)
+rental_id (fk)
+
+Store
+store_id (pk)
+manager_staff_id (fk)
+address_id (fk)
+
+Rental 
+rental_id (pk)
+inventory_id (fk)
+customer_id (fk)
+staff_id (fk)
+
+Inventory
+inventory_id (pk)
+film_id (fk)
+store_id (fk)
+
+Address
+address_id (pk)
+city_id (fk)
+
+City
+city_id (pk)
+country_id (fk)
+
+Country
+country_id (pk)
+
+Actor
+actor_id (pk)
+
+Staff
+staff_id (pk)
+address_id (fk)
+store_id (fk)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
